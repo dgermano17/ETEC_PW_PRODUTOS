@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>produtos</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="produtos.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="#" id="titulo">Produtos</a>
+	</nav>
+
+	<div class="container">
+
+		<div class="card">
+			<div class="card-body">
+				<form id="form-produto">
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="nome">Nome do produto</label>
+							<input type="text" class="form-control" id="nome" name="nome" placeholder="nome do produto" required="on">
+						</div>
+					</div>
+					<div class="form-row">
+
+						<div class="form-group col-md-3">
+							<label for="qtde">Quantidade</label>
+							<input type="number" class="form-control" id="qtde" name="qtde" placeholder="qtde">
+						</div>
+
+						<div class="form-group col-md-3">
+							<label for="preco">Preço</label>
+							<input type="text" class="form-control" id="preco" name="preco" placeholder="Preço" pattern="\d\d\d,\d\d" title="Digite no formato 999,00">
+						</div>
+						
+						<div class="form-group col-md-4">
+							<label for="descricao">Descrição</label>
+							<input type="text" class="form-control" id="descricao" name="descricao" placeholder="Descrição">
+						</div>
+						
+						<div class="form-group col-md-2">
+							<button class="btn btn-primary" id="btnSalvar">Salvar</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<h5>Procurar</h5>
+			</div>
+			<div class="card-body">
+				<div class="form-group col-md-6">
+					<label for="filtro">Procurar produto</label>
+					<input type="text" class="form-control" id="filtro">
+				</div>
+			</div>
+		</div>
+
+		<table class="table table-hover" id="table">
+			<tr>
+				<th>foto</th>
+				<th>nome</th>
+				<th>qtde</th>
+				<th>preço</th>
+				<th></th>
+			</tr>
+			<tr class="produto">
+				<td></td>
+				<td class="nome">Café</td>
+				<td class="qtde">10</td>
+				<td class="preco">R$ 3,00</td>
+				<td>
+					<button class="btn btn-danger btn-apagar">
+						<i class="fas fa-trash-alt"></i>
+					</button>
+					<button class="btn btn-primary btn-editar">
+						<i class="fas fa-edit"></i>
+					</button>
+					<button class="btn btn-warning">
+						<i class="fas fa-copy"></i>
+					</button>
+				</td>
+			</tr>
+			<tr class="produto">
+				<td></td>
+				<td class="nome">Pão de Queijo</td>
+				<td class="qtde">15</td>
+				<td class="preco">R$ 2,50</td>
+				<td>
+					<button class="btn btn-danger btn-apagar">
+						<i class="fas fa-trash-alt"></i>
+					</button>
+					<button class="btn btn-primary btn-editar">
+						<i class="fas fa-edit"></i>
+					</button>
+					<button class="btn btn-warning">
+						<i class="fas fa-copy"></i>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+<script type="text/javascript" src="produtos2.js"></script>
+
+</html>
