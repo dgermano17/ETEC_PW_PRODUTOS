@@ -1,0 +1,8 @@
+.fade-out{
+	opacity: 0;
+	transition: 1s;
+}
+
+.invisivel{
+	display: none;
+}
